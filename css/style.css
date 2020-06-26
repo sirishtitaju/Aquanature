@@ -8,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
   color: #f6f7f8;
-  background-image: linear-gradient(#00c1c16e, #0418a58c), url(img/bg.jpg);
+  background-image: linear-gradient(#00c1c16e, #0418a58c), url(../img/bg.jpg);
   background-size: cover;
   opacity: 0.95;
 }
