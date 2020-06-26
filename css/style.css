@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  color: #f6f7f8;
+  background-image: linear-gradient(#00c1c16e, #0418a58c), url(img/bg.jpg);
+  background-size: cover;
+  opacity: 0.95;
+}
+
+.wrapper {
+  background-color: rgba(243, 62, 162, 0.253);
+
+  /* For background blur like OS X */
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+}
+
+.section-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.nav-title {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font-size: 1.8rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-menu {
+  position: relative;
+  top: 8%;
+}
+
+.nav-menu span::before {
+  content: '';
+  position: absolute;
+
+  height: 4px;
+  border-radius: 5px;
+  width: 20px;
+
+  background-color: #fcfcfc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  right: 0%;
+  top: -0.5rem;
+}
+
+.nav-menu span {
+  position: absolute;
+  display: block;
+
+  height: 4px;
+  width: 26px;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  right: 5%;
+  top: 8%;
+}
+
+.nav-menu span::after {
+  content: '';
+  position: absolute;
+
+  height: 4px;
+  width: 32px;
+
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+
+  right: 0%;
+  top: 0.5rem;
+}
+
+.leftMenu {
+  position: absolute;
+  top: 46%;
+  left: 5%;
+  font-size: 1.1rem;
+}
+
+.leftMenu span {
+  position: absolute;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border: 5px solid #f89a63;
+  border-radius: 50%;
+}
+
+.leftMenu span::before {
+  content: 'Np';
+  position: absolute;
+  top: -2.6rem;
+  left: 0%;
+  padding: 0.3rem;
+}
+
+.leftMenu span::after {
+  content: 'In';
+  position: absolute;
+  top: 2.6rem;
+  border: 3px solid transparent;
+  left: 0%;
+  padding: 0.3rem;
+}
+
+.rightMenus {
+  position: fixed;
+  top: 50%;
+  right: 7%;
+}
+
+.rightMenu:first-child {
+  position: absolute;
+  top: -3rem;
+}
+
+.rightMenu:nth-child(2) {
+  position: absolute;
+}
+
+.rightMenu:nth-child(3) {
+  position: absolute;
+  top: 3rem;
+}
+
+.rightMenu span {
+  position: absolute;
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+
+.rightMenu span::before {
+  top: -4px;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 12px solid #354999;
+  left: -4px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.rightMenuActive {
+  top: -9px;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 17px solid #f89a63;
+  left: -9px;
+  z-index: -5;
+  border-radius: 50%;
+}
+
+#fish-svg,
+#fish-svg~svg {
+  position: absolute;
+  top: 32%;
+  left: 11%;
+
+  /* flipping svg Horizontally  */
+  transform: scale(-0.9, 0.9) translate(-50%, -50%);
+}
+
+/* 😎 This is where Magic Happens 👇  */
+.above-fish {
+  position: absolute;
+  z-index: 5;
+}
+
+.bottom {
+  height: 95vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bottom-middle {
+  background-color: #fcfcfc;
+  height: 4px;
+  width: 21px;
+  transform: rotate(-137deg);
+}
+
+.bottom-middle:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fcfcfc;
+  height: 4px;
+  width: 21px;
+  transform: rotate(-87deg) translateX(-9px) translateY(-9px);
+  border-radius: 15px;
+}
+
+.section-header strong {
+  font-size: 9.5rem;
+  font-weight: 800;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  letter-spacing: 4.05rem;
+  text-shadow: 2px 2px #0351ac85;
+}
+
+.section-header strong::after {
+  content: 'Beauty of the Ocean';
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.9rem;
+  display: block;
+}
